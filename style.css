@@ -7,15 +7,39 @@
     --text-grey: rgba(108,108,108,255); 
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(/Roboto/Roboto-Black.ttf);
+  }
+
 .container {
     display: grid; 
     grid-template-columns: 0.8fr 1fr 1fr 0.6fr;
     grid-template-rows: 20vh 40vh 40vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sidebar {
     background-color: var(--blue);
+    color: var(--white);
     grid-row: 1 / 4;
+}
+
+.sidebar h1 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-left: 20px; 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding: 0; 
+    margin-left: 20px; 
+
 }
 
 .header {
@@ -33,7 +57,7 @@
 .announcements {
     border: 2pt solid red; 
     grid-column: 4 / 5; 
-    grid-rows: 2 / 3; 
+    grid-row: 2 / 3; 
     background-color: var(--grey);
 
 }
@@ -41,7 +65,7 @@
 .trending {
     border: 2pt solid red; 
     grid-column: 4 / 5; 
-    grid-rows: 3 / 4; 
+    grid-row: 3 / 4; 
     background-color: var(--grey);
 
 }
