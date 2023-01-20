@@ -25,11 +25,21 @@
     grid-row: 1 / 4;
 }
 
+.sidebar-header {
+    display: flex; 
+    padding-left: 20px; 
+    padding-top: 20px;
+
+}
+
 .sidebar h1 {
     display: flex;
     align-items: left;
     flex-direction: column;
-    margin-left: 20px; 
+}
+
+.sidebar img { 
+    width: 60px;
 }
 
 .sidebar ul {
