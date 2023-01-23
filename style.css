@@ -31,6 +31,7 @@
     display: flex; 
     padding-left: 20px; 
     padding-top: 20px;
+    padding-right: 20px; 
 }
 
 .sidebar h1 {
@@ -71,8 +72,38 @@
 /* Header */
 
 .header {
-    border: 2pt solid red; 
     grid-column: 2 / 5; 
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search-bar {
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2; 
+    display: flex; 
+    align-items: center;
+}
+
+.greeting {
+    grid-column: 1 / 2; 
+    grid-row: 2 / 3; 
+    display: flex; 
+    align-items: center;
+}
+
+.profile img {
+    height: 80px; 
+}
+
+.profile-link {
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2; 
+}
+
+.action-buttons {
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3; 
 }
 
 /* Desktop */
