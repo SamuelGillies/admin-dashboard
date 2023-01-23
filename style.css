@@ -19,6 +19,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Sidebar */
+
 .sidebar {
     background-color: var(--blue);
     color: var(--white);
@@ -29,7 +31,6 @@
     display: flex; 
     padding-left: 20px; 
     padding-top: 20px;
-
 }
 
 .sidebar h1 {
@@ -40,6 +41,7 @@
 
 .sidebar img { 
     width: 60px;
+    filter: invert(100%);
 }
 
 .sidebar ul {
@@ -49,13 +51,31 @@
     flex-direction: column;
     padding: 0; 
     margin-left: 20px; 
-
+    padding-bottom: 20px; 
 }
+
+.icon {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px; 
+}
+
+.icon img {
+    height: 30px;
+}
+
+.icon li {
+    font-size: 20px;
+}
+
+/* Header */
 
 .header {
     border: 2pt solid red; 
     grid-column: 2 / 5; 
 }
+
+/* Desktop */
 
 .desktop {
     border: 2pt solid red; 
