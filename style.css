@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: Roboto;
-    src: url(/Roboto/Roboto-Black.ttf);
+    src: url(/Roboto/Roboto-Medium.ttf);
   }
 
 .container {
@@ -76,32 +76,50 @@
     display: grid; 
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-bottom: 0.5rem; 
 }
 
-.search-bar {
+.header--search {
     grid-column: 1 / 2; 
     grid-row: 1 / 2; 
     display: flex; 
     align-items: center;
+    padding-left: 1rem; 
+    padding-top: 1rem; 
 }
 
-.greeting {
+.header--greeting-block img {
+    height: 80px; 
+    padding-right: 1rem; 
+}
+
+.header--greeting-block {
     grid-column: 1 / 2; 
     grid-row: 2 / 3; 
     display: flex; 
     align-items: center;
+    padding-left: 1rem; 
 }
 
-.profile img {
-    height: 80px; 
+.header--greeting {
+    margin: 0;
 }
 
-.profile-link {
+.header--greeting p, .header--greeting h3 {
+    margin: 2px; 
+    letter-spacing: 0.1rem;
+}
+
+.header--profile img {
+    height: 40px; 
+}
+
+.header--profile {
     grid-column: 2 / 3; 
     grid-row: 1 / 2; 
 }
 
-.action-buttons {
+.header--buttons {
     grid-column: 2 / 3; 
     grid-row: 2 / 3; 
 }
