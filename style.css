@@ -89,7 +89,7 @@
 }
 
 .header--search input {
-    width: 80%; 
+    width: 100%; 
     border-radius: 16px;
     background-color: var(--grey);
 }
@@ -142,8 +142,20 @@
 .header--buttons {
     grid-column: 2 / 3; 
     grid-row: 2 / 3; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 4rem;
 }
 
+.header--buttons button {
+    background-color: var(--blue); 
+    color: var(--white); 
+    border: none; 
+    height: 2rem;
+    width: 6rem; 
+    border-radius: 16px; 
+}
 /* Desktop */
 
 .desktop {
